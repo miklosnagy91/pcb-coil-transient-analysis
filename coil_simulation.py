@@ -98,16 +98,16 @@ max_magnetic_field = max(abs(systemOutput3)) * 10000  # Convert from Tesla to Ga
 print('Peak Magnetic Field = ', max_magnetic_field, 'Gauss')
 
 # Plot the results
-plottingFunction(timeReturned3, 
+plottingFunction(timeReturned3*1000, 
                  -systemOutput3, 
                  titleString='Peak Magnetic Field Create in Through Coil',
-                 stringXaxis='Time [s]', 
+                 stringXaxis='Time [ms]', 
                  stringYaxis='Magnetic Field [T]', 
                  stringFileName='outputInitial.png')
 
-plottingFunction(timeReturned3, 
+plottingFunction(timeReturned3*1000, 
                  -systemOutput3 / (8 * 2**0.5 * u_0 / (4 * np.pi) * a_inv_sum), 
                  titleString='Current Running Through Coil',
-                 stringXaxis='Time [s]', 
+                 stringXaxis='Time [ms]', 
                  stringYaxis='Current [A]', 
                  stringFileName='outputNormalized.png')
