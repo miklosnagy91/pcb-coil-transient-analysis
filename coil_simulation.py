@@ -2,7 +2,7 @@
 This script simulates the transient response of a series RLC circuit, 
 modeling the discharge of a capacitor through a planar coil implemented 
 on multiple printed circuit boards (PCBs). It calculates the time-dependent 
-current through the coil and the resulting magnetic field.
+current and magnetics through the coil.
 
 The simulation includes two plots:
 1. Magnetic Field vs. Time (in teslas)
