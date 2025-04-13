@@ -2,11 +2,11 @@
 This script simulates the transient response of a series RLC circuit, 
 modeling the discharge of a capacitor through a planar coil implemented 
 on multiple printed circuit boards (PCBs). It calculates the time-dependent 
-current and magnetics through the coil.
+current through the coil and the resulting magnetic field.
 
 The simulation includes two plots:
 1. Magnetic Field vs. Time (in teslas)
-2. Normalized Current vs. Time (in amperes)
+2. Current vs. Time (in amperes)
 
 Inputs:
 - t = 2 * 0.0348 mm       # Total copper thickness for 2 oz copper traces
@@ -20,7 +20,8 @@ Inputs:
 These parameters are used to determine the resistance, inductance, and 
 geometrical characteristics of the coil, which affect the circuit's 
 transient behavior. The results are useful for analyzing electromagnetic 
-performance in applications such as magnetic pulsing or wireless energy transfer.
+performance in magnetic pulsing.
+
 """
 
 
